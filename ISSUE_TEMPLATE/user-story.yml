@@ -1,0 +1,52 @@
+name: Estória de usuário
+description: Defina uma estória de usuário.
+title: "Como um <tipo de usuário>, desejo <objetivo> para <benefício>."
+labels: ["user Story"]
+assignees:
+  - daviddumke
+body: 
+  - type: textarea
+    id: user
+    attributes:
+      label: Tipo de usuário
+      description: Conte-nos um pouco sobre o usuário dessa estória, aquele que se bebeficiará com a sua entrega.
+      placeholder: Usuário...
+      #value: "..."
+    validations:
+      required: true 
+  - type: textarea
+    id: desire
+    attributes:
+      label: Desejo do usuário
+      description: Conte-nos um pouco sobre o desejo do usuário, aquilo que ele deseja ver entregue.
+      placeholder: Desejo...
+      #value: "..."
+    validations:
+      required: true 
+  - type: textarea
+    id: benefits
+    attributes:
+      label: Benefícios para o usuário
+      description: Conte-nos um pouco sobre os benefícios que a entrega desta estória trará ao usuário.
+      placeholder: Beneficios...
+      #value: "..."
+    validations:
+      required: true 
+  - type: textarea
+    id: definition-of-ready
+    attributes:
+      label: Definição de pronto
+      description: Checklist de validações necessárias para confirmar que a estória será compreendida pelo time de desenvolvimento.
+      placeholder: Definição de pronto...
+      value: "- [ ] teste\n- [ ] teste\n- [ ] teste"
+    validations:
+      required: true
+  - type: textarea
+    id: definition-of-done
+    attributes:
+      label: Definição de concluído
+      description: Checklist de validações necessárias para confirmar a entrega desta estória.
+      placeholder: Definição de concluído...
+      value: "- [ ] Definição 1\n- [ ] Definição 1\n- [ ] Definição 1"
+    validations:
+      required: true
